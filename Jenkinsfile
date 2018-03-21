@@ -6,16 +6,16 @@ node {
         echo "Destination Test: PASS"
         echo "Log Test: PASS"
     }
-    stage ("Deploy Homologação"){
+    stage ("Deploy Homologacao"){
         sensediaApiDeploy(urlManager: "https://manager-demov3.sensedia.com/api-manager/api/v3", enviromentId: "3", revisionId: "2147001")
     }
-    stage ("Testes Homologação"){
+    stage ("Testes Homologacao"){
         echo "Success"
     }
-    stage ("Deploy Produção"){
+    stage ("Deploy Producao"){
         sensediaApiDeploy(urlManager: "https://manager-demov3.sensedia.com/api-manager/api/v3", enviromentId: "1", revisionId: "2147001")
     }
-    stage ("Testes Produção"){
+    stage ("Testes Producao"){
         echo "Success"
     }
 }
