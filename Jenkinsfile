@@ -8,14 +8,14 @@ node {
     }
     stage ("Deploy hml"){
     	input 'Deploy to Production?'
-        sensediaApiDeploy(urlManager: "https://manager-demov3.sensedia.com/api-manager/api/v3", enviromentId: "3", revisionId: "2147001")
+        sensediaApiDeploy(urlManager: "https://manager-demov3.sensedia.com/api-manager/api/v3", enviromentId: "3", revisionId: "2147644")
     }
     stage ("Testes hml"){
         echo "Success"
     }
     stage ("Deploy prd"){
     	input 'Deploy to Production?'
-        sensediaApiDeploy(urlManager: "https://manager-demov3.sensedia.com/api-manager/api/v3", enviromentId: "1", revisionId: "2147001")
+        sensediaApiDeploy(urlManager: "https://manager-demov3.sensedia.com/api-manager/api/v3", enviromentId: "1", revisionId: "2147644")
     }
     stage ("Testes prd"){
         echo "Success"
