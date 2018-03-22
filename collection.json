@@ -24,8 +24,8 @@
 							"    pm.expect(jsonResponse.length).to.eql(3);",
 							"});",
 							"",
-							"pm.test(\"Response time is less than 1s\", function () {",
-							"    pm.expect(pm.response.responseTime).to.be.below(1000);",
+							"pm.test(\"Response time is less than 2s\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(2000);",
 							"});",
 							""
 						]
@@ -77,8 +77,8 @@
 							"    pm.expect(jsonResponse.tomador).to.eql(\"Fulano de tal\");",
 							"});",
 							"",
-							"pm.test(\"Response time is less than 1s\", function () {",
-							"    pm.expect(pm.response.responseTime).to.be.below(1000);",
+							"pm.test(\"Response time is less than 2s\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(2000);",
 							"});",
 							""
 						]
