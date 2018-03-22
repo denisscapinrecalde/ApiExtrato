@@ -3,8 +3,7 @@ node {
         checkout scm
     }
     stage ("Quality Analyst"){
-        echo "Destination Test: PASS"
-        echo "Log Test: PASS"
+        sensediaApiQA(destination: true, logInterceptor: true, resourceOutOfSize: true, resourceSize: 3)
     }
     stage ("Deploy hml"){
     	input 'Deploy to Hml?'
