@@ -1,0 +1,117 @@
+{
+	"info": {
+		"name": "Ambiente Demo v3",
+		"_postman_id": "189f60c6-d7ff-d417-deb6-e5c81b6fa404",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "transacoes",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "cf230a95-4c6a-4b2f-aa02-dec88d6a0c60",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"response is success\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"response lenght equal 3\", function() {",
+							"    var jsonResponse = pm.response.json();",
+							"    pm.expect(jsonResponse.length).to.eql(3);",
+							"});",
+							"",
+							"pm.test(\"Response time is less than 1s\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(1000);",
+							"});",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "client_id",
+						"value": "dcfee246-b5c6-31dd-a6e6-4f2879755771"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://api-demov3.sensedia.com/extrato/v1/transacoes",
+					"protocol": "http",
+					"host": [
+						"api-demov3",
+						"sensedia",
+						"com"
+					],
+					"path": [
+						"extrato",
+						"v1",
+						"transacoes"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "transacao",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "0c3f9a3c-d90f-47ce-981f-fbabad875bbf",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"response is success\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"tomador is Fulano de tal\", function() {",
+							"    var jsonResponse = pm.response.json();",
+							"    pm.expect(jsonResponse.tomador).to.eql(\"Fulano de tal\");",
+							"});",
+							"",
+							"pm.test(\"Response time is less than 1s\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(1000);",
+							"});",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "client_id",
+						"value": "dcfee246-b5c6-31dd-a6e6-4f2879755771"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://api-demov3.sensedia.com/extrato/v1/transacoes/1",
+					"protocol": "http",
+					"host": [
+						"api-demov3",
+						"sensedia",
+						"com"
+					],
+					"path": [
+						"extrato",
+						"v1",
+						"transacoes",
+						"1"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
