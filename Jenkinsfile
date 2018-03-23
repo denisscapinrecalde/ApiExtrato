@@ -3,7 +3,7 @@ node {
         checkout scm
     }
     stage ("Quality Analyst"){
-        sensediaApiQA(destination: true, logInterceptor: true, resourceOutOfSize: true, resourceSize: 3)
+        sensediaApiQA(destination: true, logInterceptor: false, resourceOutOfSize: false)
     }
     stage ("Deploy hml"){
     	input 'Deploy to Hml?'
