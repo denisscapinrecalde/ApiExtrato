@@ -35,6 +35,13 @@
             "id": 3,
             "name": "QA",
             "inboundUrl": "http://api-demov3.sensedia.com/qa/",
+            "revisionDeployed": {
+                "id": 25624,
+                "apiId": 204,
+                "apiName": "API Extrato",
+                "revisionId": 2147644,
+                "revisionNumber": 2
+            },
             "visibility": {
                 "id": 4,
                 "visibilityType": "ORGANIZATION",
@@ -45,6 +52,13 @@
             "id": 1,
             "name": "Production",
             "inboundUrl": "http://api-demov3.sensedia.com/",
+            "revisionDeployed": {
+                "id": 25632,
+                "apiId": 204,
+                "apiName": "API Extrato",
+                "revisionId": 2147644,
+                "revisionNumber": 2
+            },
             "visibility": {
                 "id": 2,
                 "visibilityType": "ORGANIZATION",
@@ -937,6 +951,102 @@
                     "environmentId": 2,
                     "status": "UNDEPLOYED",
                     "deployDate": 1521807808000,
+                    "deploymentSchedule": null
+                },
+                {
+                    "id": 25606,
+                    "revisionId": 2147644,
+                    "revisionNumber": 2,
+                    "apiId": 204,
+                    "apiName": "API Extrato",
+                    "apiDescription": "Api com dados de transações realizadas",
+                    "environmentId": 3,
+                    "status": "UNDEPLOYED",
+                    "deployDate": 1521810554000,
+                    "deploymentSchedule": null
+                },
+                {
+                    "id": 25608,
+                    "revisionId": 2147644,
+                    "revisionNumber": 2,
+                    "apiId": 204,
+                    "apiName": "API Extrato",
+                    "apiDescription": "Api com dados de transações realizadas",
+                    "environmentId": 3,
+                    "status": "UNDEPLOYED",
+                    "deployDate": 1521810927000,
+                    "deploymentSchedule": null
+                },
+                {
+                    "id": 25615,
+                    "revisionId": 2147644,
+                    "revisionNumber": 2,
+                    "apiId": 204,
+                    "apiName": "API Extrato",
+                    "apiDescription": "Api com dados de transações realizadas",
+                    "environmentId": 3,
+                    "status": "UNDEPLOYED",
+                    "deployDate": 1521811151000,
+                    "deploymentSchedule": null
+                },
+                {
+                    "id": 25616,
+                    "revisionId": 2147644,
+                    "revisionNumber": 2,
+                    "apiId": 204,
+                    "apiName": "API Extrato",
+                    "apiDescription": "Api com dados de transações realizadas",
+                    "environmentId": 1,
+                    "status": "UNDEPLOYED",
+                    "deployDate": 1521811174000,
+                    "deploymentSchedule": null
+                },
+                {
+                    "id": 25622,
+                    "revisionId": 2147644,
+                    "revisionNumber": 2,
+                    "apiId": 204,
+                    "apiName": "API Extrato",
+                    "apiDescription": "Api com dados de transações realizadas",
+                    "environmentId": 3,
+                    "status": "UNDEPLOYED",
+                    "deployDate": 1521812141000,
+                    "deploymentSchedule": null
+                },
+                {
+                    "id": 25623,
+                    "revisionId": 2147644,
+                    "revisionNumber": 2,
+                    "apiId": 204,
+                    "apiName": "API Extrato",
+                    "apiDescription": "Api com dados de transações realizadas",
+                    "environmentId": 1,
+                    "status": "UNDEPLOYED",
+                    "deployDate": 1521812166000,
+                    "deploymentSchedule": null
+                },
+                {
+                    "id": 25624,
+                    "revisionId": 2147644,
+                    "revisionNumber": 2,
+                    "apiId": 204,
+                    "apiName": "API Extrato",
+                    "apiDescription": "Api com dados de transações realizadas",
+                    "environmentId": 3,
+                    "status": "DEPLOYED",
+                    "deployDate": 1521812168000,
+                    "deploymentSchedule": null
+                },
+                {
+                    "id": 25632,
+                    "revisionId": 2147644,
+                    "revisionNumber": 2,
+                    "apiId": 204,
+                    "apiName": "API Extrato",
+                    "apiDescription": "Api com dados de transações realizadas",
+                    "environmentId": 1,
+                    "status": "DEPLOYED",
+                    "deployDate": 1521812881000,
                     "deploymentSchedule": null
                 }
             ],
