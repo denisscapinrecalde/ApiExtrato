@@ -17,9 +17,9 @@
         {
             "id": 2,
             "name": "Sandbox",
-            "inboundUrl": "http://api-demov3.sensedia.com/sandbox",
+            "inboundUrl": "http://api-demov3.sensedia.com/sandbox/",
             "revisionDeployed": {
-                "id": 25583,
+                "id": 25590,
                 "apiId": 204,
                 "apiName": "API Extrato",
                 "revisionId": 2147648,
@@ -34,7 +34,7 @@
         {
             "id": 3,
             "name": "QA",
-            "inboundUrl": "http://api-demov3.sensedia.com/qa",
+            "inboundUrl": "http://api-demov3.sensedia.com/qa/",
             "visibility": {
                 "id": 4,
                 "visibilityType": "ORGANIZATION",
@@ -44,7 +44,7 @@
         {
             "id": 1,
             "name": "Production",
-            "inboundUrl": "http://api-demov3.sensedia.com",
+            "inboundUrl": "http://api-demov3.sensedia.com/",
             "visibility": {
                 "id": 2,
                 "visibilityType": "ORGANIZATION",
@@ -1223,128 +1223,7 @@
         },
         {
             "id": 2147648,
-            "interceptors": [
-                {
-                    "id": 161083,
-                    "idTemp": null,
-                    "position": 1,
-                    "type": "Access token validation",
-                    "content": "{\"location\":\"HEADER\",\"name\":\"teste\"}",
-                    "executionPoint": "FIRST",
-                    "status": "REFERENCE",
-                    "parent": null,
-                    "revision": {
-                        "id": 2147648,
-                        "apiBroken": false,
-                        "planBroken": false
-                    },
-                    "resource": null,
-                    "operation": null,
-                    "planId": null,
-                    "customInterceptorId": null,
-                    "parentType": "REVISION"
-                },
-                {
-                    "id": 161082,
-                    "idTemp": null,
-                    "position": 2,
-                    "type": "Log",
-                    "content": "{}",
-                    "executionPoint": "FIRST",
-                    "status": "REFERENCE",
-                    "parent": null,
-                    "revision": {
-                        "id": 2147648,
-                        "apiBroken": false,
-                        "planBroken": false
-                    },
-                    "resource": null,
-                    "operation": null,
-                    "planId": null,
-                    "customInterceptorId": null,
-                    "parentType": "REVISION"
-                },
-                {
-                    "id": 161087,
-                    "idTemp": null,
-                    "position": 3,
-                    "type": "Mock",
-                    "content": "{\"body\":null,\"status\":\"200\",\"headers\":null}",
-                    "executionPoint": "FIRST",
-                    "status": "REFERENCE",
-                    "parent": null,
-                    "revision": {
-                        "id": 2147648,
-                        "apiBroken": false,
-                        "planBroken": false
-                    },
-                    "resource": null,
-                    "operation": null,
-                    "planId": null,
-                    "customInterceptorId": null,
-                    "parentType": "REVISION"
-                },
-                {
-                    "id": 161081,
-                    "idTemp": null,
-                    "position": 4,
-                    "type": "Custom",
-                    "content": "{\"id\":36,\"name\":\"obterLogradouroAuthResponse\",\"script\":\"var json = JSON.parse( $call.response.getBody().getString( \\\"utf-8\\\" ) );\\n\\nif ( json['return'] != null ) {\\n    json['logradouro'] = json['return'];\\n    delete json['return'];\\n}\\n\\n$call.response.getBody().setString( JSON.stringify(json.logradouro), \\\"utf-8\\\" );\",\"abort\":false,\"debug\":false,\"visibility\":{\"id\":194,\"visibilityType\":\"ORGANIZATION\",\"users\":[]},\"tags\":[\"Uncategorized\"]}",
-                    "executionPoint": "FIRST",
-                    "status": "REFERENCE",
-                    "parent": null,
-                    "revision": {
-                        "id": 2147648,
-                        "apiBroken": false,
-                        "planBroken": false
-                    },
-                    "resource": null,
-                    "operation": null,
-                    "planId": null,
-                    "customInterceptorId": 36,
-                    "parentType": "REVISION"
-                },
-                {
-                    "id": 161075,
-                    "idTemp": null,
-                    "position": 5,
-                    "type": "Billing hits",
-                    "content": "{\"httpStatus\":\"200\"}",
-                    "executionPoint": "SECOND",
-                    "status": "REFERENCE",
-                    "parent": null,
-                    "revision": {
-                        "id": 2147648,
-                        "apiBroken": false,
-                        "planBroken": false
-                    },
-                    "resource": null,
-                    "operation": null,
-                    "planId": null,
-                    "customInterceptorId": null,
-                    "parentType": "REVISION"
-                },
-                {
-                    "id": 161078,
-                    "idTemp": null,
-                    "position": 6,
-                    "type": "Log",
-                    "content": "{}",
-                    "executionPoint": "SECOND",
-                    "status": "REFERENCE",
-                    "parent": null,
-                    "revision": {
-                        "id": 2147648,
-                        "apiBroken": false,
-                        "planBroken": false
-                    },
-                    "resource": null,
-                    "operation": null,
-                    "planId": null,
-                    "customInterceptorId": null,
-                    "parentType": "REVISION"
-                }
-            ],
+            "interceptors": [],
             "apiBroken": false,
             "revisionNumber": 3,
             "lifeCycle": "AVAILABLE",
@@ -1406,8 +1285,32 @@
                     "apiName": "API Extrato",
                     "apiDescription": "Api com dados de transações realizadas",
                     "environmentId": 2,
-                    "status": "DEPLOYED",
+                    "status": "UNDEPLOYED",
                     "deployDate": 1521808994000,
+                    "deploymentSchedule": null
+                },
+                {
+                    "id": 25588,
+                    "revisionId": 2147648,
+                    "revisionNumber": 3,
+                    "apiId": 204,
+                    "apiName": "API Extrato",
+                    "apiDescription": "Api com dados de transações realizadas",
+                    "environmentId": 2,
+                    "status": "UNDEPLOYED",
+                    "deployDate": 1521809358000,
+                    "deploymentSchedule": null
+                },
+                {
+                    "id": 25590,
+                    "revisionId": 2147648,
+                    "revisionNumber": 3,
+                    "apiId": 204,
+                    "apiName": "API Extrato",
+                    "apiDescription": "Api com dados de transações realizadas",
+                    "environmentId": 2,
+                    "status": "DEPLOYED",
+                    "deployDate": 1521809554000,
                     "deploymentSchedule": null
                 }
             ],
@@ -1423,7 +1326,7 @@
                     "operations": [
                         {
                             "id": 2147650,
-                            "destination": "http://www.mocky.io/v2/5a7c43182e00006200052859",
+                            "destination": "$destinationCI1",
                             "interceptors": [
                                 {
                                     "id": 161079,
@@ -1556,7 +1459,7 @@
                         },
                         {
                             "id": 2147651,
-                            "destination": "http://www.mocky.io/v2/5a7c436a2e00002a0005285b",
+                            "destination": "$destinationCI2",
                             "interceptors": [
                                 {
                                     "id": 161074,
@@ -1695,128 +1598,7 @@
     ],
     "lastRevision": {
         "id": 2147648,
-        "interceptors": [
-            {
-                "id": 161083,
-                "idTemp": null,
-                "position": 1,
-                "type": "Access token validation",
-                "content": "{\"location\":\"HEADER\",\"name\":\"teste\"}",
-                "executionPoint": "FIRST",
-                "status": "REFERENCE",
-                "parent": null,
-                "revision": {
-                    "id": 2147648,
-                    "apiBroken": false,
-                    "planBroken": false
-                },
-                "resource": null,
-                "operation": null,
-                "planId": null,
-                "customInterceptorId": null,
-                "parentType": "REVISION"
-            },
-            {
-                "id": 161082,
-                "idTemp": null,
-                "position": 2,
-                "type": "Log",
-                "content": "{}",
-                "executionPoint": "FIRST",
-                "status": "REFERENCE",
-                "parent": null,
-                "revision": {
-                    "id": 2147648,
-                    "apiBroken": false,
-                    "planBroken": false
-                },
-                "resource": null,
-                "operation": null,
-                "planId": null,
-                "customInterceptorId": null,
-                "parentType": "REVISION"
-            },
-            {
-                "id": 161087,
-                "idTemp": null,
-                "position": 3,
-                "type": "Mock",
-                "content": "{\"body\":null,\"status\":\"200\",\"headers\":null}",
-                "executionPoint": "FIRST",
-                "status": "REFERENCE",
-                "parent": null,
-                "revision": {
-                    "id": 2147648,
-                    "apiBroken": false,
-                    "planBroken": false
-                },
-                "resource": null,
-                "operation": null,
-                "planId": null,
-                "customInterceptorId": null,
-                "parentType": "REVISION"
-            },
-            {
-                "id": 161081,
-                "idTemp": null,
-                "position": 4,
-                "type": "Custom",
-                "content": "{\"id\":36,\"name\":\"obterLogradouroAuthResponse\",\"script\":\"var json = JSON.parse( $call.response.getBody().getString( \\\"utf-8\\\" ) );\\n\\nif ( json['return'] != null ) {\\n    json['logradouro'] = json['return'];\\n    delete json['return'];\\n}\\n\\n$call.response.getBody().setString( JSON.stringify(json.logradouro), \\\"utf-8\\\" );\",\"abort\":false,\"debug\":false,\"visibility\":{\"id\":194,\"visibilityType\":\"ORGANIZATION\",\"users\":[]},\"tags\":[\"Uncategorized\"]}",
-                "executionPoint": "FIRST",
-                "status": "REFERENCE",
-                "parent": null,
-                "revision": {
-                    "id": 2147648,
-                    "apiBroken": false,
-                    "planBroken": false
-                },
-                "resource": null,
-                "operation": null,
-                "planId": null,
-                "customInterceptorId": 36,
-                "parentType": "REVISION"
-            },
-            {
-                "id": 161075,
-                "idTemp": null,
-                "position": 5,
-                "type": "Billing hits",
-                "content": "{\"httpStatus\":\"200\"}",
-                "executionPoint": "SECOND",
-                "status": "REFERENCE",
-                "parent": null,
-                "revision": {
-                    "id": 2147648,
-                    "apiBroken": false,
-                    "planBroken": false
-                },
-                "resource": null,
-                "operation": null,
-                "planId": null,
-                "customInterceptorId": null,
-                "parentType": "REVISION"
-            },
-            {
-                "id": 161078,
-                "idTemp": null,
-                "position": 6,
-                "type": "Log",
-                "content": "{}",
-                "executionPoint": "SECOND",
-                "status": "REFERENCE",
-                "parent": null,
-                "revision": {
-                    "id": 2147648,
-                    "apiBroken": false,
-                    "planBroken": false
-                },
-                "resource": null,
-                "operation": null,
-                "planId": null,
-                "customInterceptorId": null,
-                "parentType": "REVISION"
-            }
-        ],
+        "interceptors": [],
         "apiBroken": false,
         "revisionNumber": 3,
         "lifeCycle": "AVAILABLE",
@@ -1878,8 +1660,32 @@
                 "apiName": "API Extrato",
                 "apiDescription": "Api com dados de transações realizadas",
                 "environmentId": 2,
-                "status": "DEPLOYED",
+                "status": "UNDEPLOYED",
                 "deployDate": 1521808994000,
+                "deploymentSchedule": null
+            },
+            {
+                "id": 25588,
+                "revisionId": 2147648,
+                "revisionNumber": 3,
+                "apiId": 204,
+                "apiName": "API Extrato",
+                "apiDescription": "Api com dados de transações realizadas",
+                "environmentId": 2,
+                "status": "UNDEPLOYED",
+                "deployDate": 1521809358000,
+                "deploymentSchedule": null
+            },
+            {
+                "id": 25590,
+                "revisionId": 2147648,
+                "revisionNumber": 3,
+                "apiId": 204,
+                "apiName": "API Extrato",
+                "apiDescription": "Api com dados de transações realizadas",
+                "environmentId": 2,
+                "status": "DEPLOYED",
+                "deployDate": 1521809554000,
                 "deploymentSchedule": null
             }
         ],
@@ -1895,7 +1701,7 @@
                 "operations": [
                     {
                         "id": 2147650,
-                        "destination": "http://www.mocky.io/v2/5a7c43182e00006200052859",
+                        "destination": "$destinationCI1",
                         "interceptors": [
                             {
                                 "id": 161079,
@@ -2028,7 +1834,7 @@
                     },
                     {
                         "id": 2147651,
-                        "destination": "http://www.mocky.io/v2/5a7c436a2e00002a0005285b",
+                        "destination": "$destinationCI2",
                         "interceptors": [
                             {
                                 "id": 161074,
