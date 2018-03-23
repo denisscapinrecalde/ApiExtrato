@@ -19,7 +19,7 @@
             "name": "Sandbox",
             "inboundUrl": "http://api-demov3.sensedia.com/sandbox/",
             "revisionDeployed": {
-                "id": 25656,
+                "id": 25660,
                 "apiId": 204,
                 "apiName": "API Extrato",
                 "revisionId": 2147648,
@@ -36,7 +36,7 @@
             "name": "QA",
             "inboundUrl": "http://api-demov3.sensedia.com/qa/",
             "revisionDeployed": {
-                "id": 25655,
+                "id": 25661,
                 "apiId": 204,
                 "apiName": "API Extrato",
                 "revisionId": 2147648,
@@ -53,7 +53,7 @@
             "name": "Production",
             "inboundUrl": "http://api-demov3.sensedia.com/",
             "revisionDeployed": {
-                "id": 25657,
+                "id": 25659,
                 "apiId": 204,
                 "apiName": "API Extrato",
                 "revisionId": 2147648,
@@ -1491,7 +1491,7 @@
                     "apiName": "API Extrato",
                     "apiDescription": "Api com dados de transações realizadas",
                     "environmentId": 3,
-                    "status": "DEPLOYED",
+                    "status": "UNDEPLOYED",
                     "deployDate": 1521815481000,
                     "deploymentSchedule": null
                 },
@@ -1503,7 +1503,7 @@
                     "apiName": "API Extrato",
                     "apiDescription": "Api com dados de transações realizadas",
                     "environmentId": 2,
-                    "status": "DEPLOYED",
+                    "status": "UNDEPLOYED",
                     "deployDate": 1521815482000,
                     "deploymentSchedule": null
                 },
@@ -1515,8 +1515,44 @@
                     "apiName": "API Extrato",
                     "apiDescription": "Api com dados de transações realizadas",
                     "environmentId": 1,
-                    "status": "DEPLOYED",
+                    "status": "UNDEPLOYED",
                     "deployDate": 1521815481000,
+                    "deploymentSchedule": null
+                },
+                {
+                    "id": 25659,
+                    "revisionId": 2147648,
+                    "revisionNumber": 3,
+                    "apiId": 204,
+                    "apiName": "API Extrato",
+                    "apiDescription": "Api com dados de transações realizadas",
+                    "environmentId": 1,
+                    "status": "DEPLOYED",
+                    "deployDate": 1521815757000,
+                    "deploymentSchedule": null
+                },
+                {
+                    "id": 25660,
+                    "revisionId": 2147648,
+                    "revisionNumber": 3,
+                    "apiId": 204,
+                    "apiName": "API Extrato",
+                    "apiDescription": "Api com dados de transações realizadas",
+                    "environmentId": 2,
+                    "status": "DEPLOYED",
+                    "deployDate": 1521815756000,
+                    "deploymentSchedule": null
+                },
+                {
+                    "id": 25661,
+                    "revisionId": 2147648,
+                    "revisionNumber": 3,
+                    "apiId": 204,
+                    "apiName": "API Extrato",
+                    "apiDescription": "Api com dados de transações realizadas",
+                    "environmentId": 3,
+                    "status": "DEPLOYED",
+                    "deployDate": 1521815756000,
                     "deploymentSchedule": null
                 }
             ],
@@ -1919,26 +1955,6 @@
                                     "planId": null,
                                     "customInterceptorId": null,
                                     "parentType": "REVISION"
-                                },
-                                {
-                                    "id": 162496,
-                                    "idTemp": null,
-                                    "position": 7,
-                                    "type": "Log",
-                                    "content": "{}",
-                                    "executionPoint": "FIRST",
-                                    "status": "REFERENCE",
-                                    "parent": null,
-                                    "revision": {
-                                        "id": 2147669,
-                                        "apiBroken": false,
-                                        "planBroken": false
-                                    },
-                                    "resource": null,
-                                    "operation": null,
-                                    "planId": null,
-                                    "customInterceptorId": null,
-                                    "parentType": "REVISION"
                                 }
                             ],
                             "apiBroken": false,
@@ -2115,7 +2131,7 @@
                 "apiName": "API Extrato",
                 "apiDescription": "Api com dados de transações realizadas",
                 "environmentId": 3,
-                "status": "DEPLOYED",
+                "status": "UNDEPLOYED",
                 "deployDate": 1521815481000,
                 "deploymentSchedule": null
             },
@@ -2127,7 +2143,7 @@
                 "apiName": "API Extrato",
                 "apiDescription": "Api com dados de transações realizadas",
                 "environmentId": 2,
-                "status": "DEPLOYED",
+                "status": "UNDEPLOYED",
                 "deployDate": 1521815482000,
                 "deploymentSchedule": null
             },
@@ -2139,8 +2155,44 @@
                 "apiName": "API Extrato",
                 "apiDescription": "Api com dados de transações realizadas",
                 "environmentId": 1,
-                "status": "DEPLOYED",
+                "status": "UNDEPLOYED",
                 "deployDate": 1521815481000,
+                "deploymentSchedule": null
+            },
+            {
+                "id": 25659,
+                "revisionId": 2147648,
+                "revisionNumber": 3,
+                "apiId": 204,
+                "apiName": "API Extrato",
+                "apiDescription": "Api com dados de transações realizadas",
+                "environmentId": 1,
+                "status": "DEPLOYED",
+                "deployDate": 1521815757000,
+                "deploymentSchedule": null
+            },
+            {
+                "id": 25660,
+                "revisionId": 2147648,
+                "revisionNumber": 3,
+                "apiId": 204,
+                "apiName": "API Extrato",
+                "apiDescription": "Api com dados de transações realizadas",
+                "environmentId": 2,
+                "status": "DEPLOYED",
+                "deployDate": 1521815756000,
+                "deploymentSchedule": null
+            },
+            {
+                "id": 25661,
+                "revisionId": 2147648,
+                "revisionNumber": 3,
+                "apiId": 204,
+                "apiName": "API Extrato",
+                "apiDescription": "Api com dados de transações realizadas",
+                "environmentId": 3,
+                "status": "DEPLOYED",
+                "deployDate": 1521815756000,
                 "deploymentSchedule": null
             }
         ],
@@ -2528,26 +2580,6 @@
                                 "id": 162498,
                                 "idTemp": null,
                                 "position": 6,
-                                "type": "Log",
-                                "content": "{}",
-                                "executionPoint": "FIRST",
-                                "status": "REFERENCE",
-                                "parent": null,
-                                "revision": {
-                                    "id": 2147669,
-                                    "apiBroken": false,
-                                    "planBroken": false
-                                },
-                                "resource": null,
-                                "operation": null,
-                                "planId": null,
-                                "customInterceptorId": null,
-                                "parentType": "REVISION"
-                            },
-                            {
-                                "id": 162496,
-                                "idTemp": null,
-                                "position": 7,
                                 "type": "Log",
                                 "content": "{}",
                                 "executionPoint": "FIRST",
