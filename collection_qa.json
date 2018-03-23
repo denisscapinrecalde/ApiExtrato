@@ -50,12 +50,13 @@
 						"com"
 					],
 					"path": [
+						"qa",
 						"extrato",
 						"v1",
 						"transacoes"
 					]
 				},
-				"description": ""
+				"description": null
 			},
 			"response": []
 		},
@@ -103,13 +104,14 @@
 						"com"
 					],
 					"path": [
+						"qa",
 						"extrato",
 						"v1",
 						"transacoes",
 						"1"
 					]
 				},
-				"description": ""
+				"description": null
 			},
 			"response": []
 		}
