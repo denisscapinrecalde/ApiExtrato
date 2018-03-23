@@ -7,14 +7,14 @@ node {
     }
     stage ("Deploy hml"){
     	input 'Deploy to Hml?'
-        sensediaApiDeploy(urlManager: "https://manager-demov3.sensedia.com/api-manager/api/v3", managerToken: "7cd2c42b-7109-3e46-b69b-435aef3eb00a", enviromentId: "3", revisionId: "2147644")
+        sensediaApiDeploy(urlManager: "https://manager-demov3.sensedia.com/api-manager/api/v3", managerToken: "ce74056b-efaf-36f7-bdc8-66e4126626e6", enviromentId: "3", revisionId: "2147644")
     }
     stage ("Testes hml"){
         bat "newman run collection.json"
     }
     stage ("Deploy prd"){
     	input 'Deploy to Production?'
-        sensediaApiDeploy(urlManager: "https://manager-demov3.sensedia.com/api-manager/api/v3", managerToken: "7cd2c42b-7109-3e46-b69b-435aef3eb00a", enviromentId: "1", revisionId: "2147644")
+        sensediaApiDeploy(urlManager: "https://manager-demov3.sensedia.com/api-manager/api/v3", managerToken: "ce74056b-efaf-36f7-bdc8-66e4126626e6", enviromentId: "1", revisionId: "2147644")
     }
     stage ("Testes prd"){
         bat "newman run collection.json"
