@@ -15,18 +15,18 @@
     "privateAPI": false,
     "environments": [
         {
-            "id": 1,
-            "name": "Production",
-            "inboundUrl": "http://api-demov3.sensedia.com",
+            "id": 2,
+            "name": "Sandbox",
+            "inboundUrl": "http://api-demov3.sensedia.com/sandbox",
             "revisionDeployed": {
-                "id": 25443,
+                "id": 25583,
                 "apiId": 204,
                 "apiName": "API Extrato",
-                "revisionId": 2147644,
-                "revisionNumber": 2
+                "revisionId": 2147648,
+                "revisionNumber": 3
             },
             "visibility": {
-                "id": 2,
+                "id": 3,
                 "visibilityType": "ORGANIZATION",
                 "users": []
             }
@@ -35,13 +35,6 @@
             "id": 3,
             "name": "QA",
             "inboundUrl": "http://api-demov3.sensedia.com/qa",
-            "revisionDeployed": {
-                "id": 25561,
-                "apiId": 204,
-                "apiName": "API Extrato",
-                "revisionId": 2147001,
-                "revisionNumber": 1
-            },
             "visibility": {
                 "id": 4,
                 "visibilityType": "ORGANIZATION",
@@ -49,18 +42,11 @@
             }
         },
         {
-            "id": 2,
-            "name": "Sandbox",
-            "inboundUrl": "http://api-demov3.sensedia.com/sandbox",
-            "revisionDeployed": {
-                "id": 25427,
-                "apiId": 204,
-                "apiName": "API Extrato",
-                "revisionId": 2147644,
-                "revisionNumber": 2
-            },
+            "id": 1,
+            "name": "Production",
+            "inboundUrl": "http://api-demov3.sensedia.com",
             "visibility": {
-                "id": 3,
+                "id": 2,
                 "visibilityType": "ORGANIZATION",
                 "users": []
             }
@@ -323,7 +309,7 @@
                     "apiName": "API Extrato",
                     "apiDescription": "Api com dados de transações realizadas",
                     "environmentId": 3,
-                    "status": "DEPLOYED",
+                    "status": "UNDEPLOYED",
                     "deployDate": 1521804213000,
                     "deploymentSchedule": null
                 }
@@ -853,7 +839,7 @@
                     "apiName": "API Extrato",
                     "apiDescription": "Api com dados de transações realizadas",
                     "environmentId": 2,
-                    "status": "DEPLOYED",
+                    "status": "UNDEPLOYED",
                     "deployDate": 1521741621000,
                     "deploymentSchedule": null
                 },
@@ -937,8 +923,20 @@
                     "apiName": "API Extrato",
                     "apiDescription": "Api com dados de transações realizadas",
                     "environmentId": 1,
-                    "status": "DEPLOYED",
+                    "status": "UNDEPLOYED",
                     "deployDate": 1521743282000,
+                    "deploymentSchedule": null
+                },
+                {
+                    "id": 25578,
+                    "revisionId": 2147644,
+                    "revisionNumber": 2,
+                    "apiId": 204,
+                    "apiName": "API Extrato",
+                    "apiDescription": "Api com dados de transações realizadas",
+                    "environmentId": 2,
+                    "status": "UNDEPLOYED",
+                    "deployDate": 1521807808000,
                     "deploymentSchedule": null
                 }
             ],
@@ -1399,6 +1397,18 @@
                     "status": "UNDEPLOYED",
                     "deployDate": 1521662640000,
                     "deploymentSchedule": null
+                },
+                {
+                    "id": 25583,
+                    "revisionId": 2147648,
+                    "revisionNumber": 3,
+                    "apiId": 204,
+                    "apiName": "API Extrato",
+                    "apiDescription": "Api com dados de transações realizadas",
+                    "environmentId": 2,
+                    "status": "DEPLOYED",
+                    "deployDate": 1521808994000,
+                    "deploymentSchedule": null
                 }
             ],
             "resources": [
@@ -1858,6 +1868,18 @@
                 "environmentId": 2,
                 "status": "UNDEPLOYED",
                 "deployDate": 1521662640000,
+                "deploymentSchedule": null
+            },
+            {
+                "id": 25583,
+                "revisionId": 2147648,
+                "revisionNumber": 3,
+                "apiId": 204,
+                "apiName": "API Extrato",
+                "apiDescription": "Api com dados de transações realizadas",
+                "environmentId": 2,
+                "status": "DEPLOYED",
+                "deployDate": 1521808994000,
                 "deploymentSchedule": null
             }
         ],
