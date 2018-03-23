@@ -19,11 +19,11 @@
             "name": "Sandbox",
             "inboundUrl": "http://api-demov3.sensedia.com/sandbox/",
             "revisionDeployed": {
-                "id": 25673,
+                "id": 25690,
                 "apiId": 204,
                 "apiName": "API Extrato",
-                "revisionId": 2147648,
-                "revisionNumber": 3
+                "revisionId": 2147672,
+                "revisionNumber": 4
             },
             "visibility": {
                 "id": 3,
@@ -36,7 +36,7 @@
             "name": "QA",
             "inboundUrl": "http://api-demov3.sensedia.com/qa/",
             "revisionDeployed": {
-                "id": 25674,
+                "id": 25684,
                 "apiId": 204,
                 "apiName": "API Extrato",
                 "revisionId": 2147648,
@@ -53,7 +53,7 @@
             "name": "Production",
             "inboundUrl": "http://api-demov3.sensedia.com/",
             "revisionDeployed": {
-                "id": 25675,
+                "id": 25685,
                 "apiId": 204,
                 "apiName": "API Extrato",
                 "revisionId": 2147648,
@@ -1599,7 +1599,7 @@
                     "apiName": "API Extrato",
                     "apiDescription": "Api com dados de transações realizadas",
                     "environmentId": 2,
-                    "status": "DEPLOYED",
+                    "status": "UNDEPLOYED",
                     "deployDate": 1521816862000,
                     "deploymentSchedule": null
                 },
@@ -1611,7 +1611,7 @@
                     "apiName": "API Extrato",
                     "apiDescription": "Api com dados de transações realizadas",
                     "environmentId": 3,
-                    "status": "DEPLOYED",
+                    "status": "UNDEPLOYED",
                     "deployDate": 1521816862000,
                     "deploymentSchedule": null
                 },
@@ -1623,8 +1623,56 @@
                     "apiName": "API Extrato",
                     "apiDescription": "Api com dados de transações realizadas",
                     "environmentId": 1,
-                    "status": "DEPLOYED",
+                    "status": "UNDEPLOYED",
                     "deployDate": 1521816862000,
+                    "deploymentSchedule": null
+                },
+                {
+                    "id": 25676,
+                    "revisionId": 2147648,
+                    "revisionNumber": 3,
+                    "apiId": 204,
+                    "apiName": "API Extrato",
+                    "apiDescription": "Api com dados de transações realizadas",
+                    "environmentId": 3,
+                    "status": "UNDEPLOYED",
+                    "deployDate": 1521816955000,
+                    "deploymentSchedule": null
+                },
+                {
+                    "id": 25677,
+                    "revisionId": 2147648,
+                    "revisionNumber": 3,
+                    "apiId": 204,
+                    "apiName": "API Extrato",
+                    "apiDescription": "Api com dados de transações realizadas",
+                    "environmentId": 1,
+                    "status": "UNDEPLOYED",
+                    "deployDate": 1521816975000,
+                    "deploymentSchedule": null
+                },
+                {
+                    "id": 25684,
+                    "revisionId": 2147648,
+                    "revisionNumber": 3,
+                    "apiId": 204,
+                    "apiName": "API Extrato",
+                    "apiDescription": "Api com dados de transações realizadas",
+                    "environmentId": 3,
+                    "status": "DEPLOYED",
+                    "deployDate": 1521818103000,
+                    "deploymentSchedule": null
+                },
+                {
+                    "id": 25685,
+                    "revisionId": 2147648,
+                    "revisionNumber": 3,
+                    "apiId": 204,
+                    "apiName": "API Extrato",
+                    "apiDescription": "Api com dados de transações realizadas",
+                    "environmentId": 1,
+                    "status": "DEPLOYED",
+                    "deployDate": 1521818148000,
                     "deploymentSchedule": null
                 }
             ],
@@ -2041,308 +2089,447 @@
                     "config": {}
                 }
             ]
+        },
+        {
+            "id": 2147672,
+            "interceptors": [],
+            "apiBroken": false,
+            "revisionNumber": 4,
+            "lifeCycle": "AVAILABLE",
+            "creationDate": 1521818204000,
+            "deployments": [
+                {
+                    "id": 25690,
+                    "revisionId": 2147672,
+                    "revisionNumber": 4,
+                    "apiId": 204,
+                    "apiName": "API Extrato",
+                    "apiDescription": "Api com dados de transações realizadas",
+                    "environmentId": 2,
+                    "status": "DEPLOYED",
+                    "deployDate": 1521818207000,
+                    "deploymentSchedule": null
+                }
+            ],
+            "resources": [
+                {
+                    "id": 2147673,
+                    "destination": null,
+                    "interceptors": [],
+                    "apiBroken": false,
+                    "timeout": null,
+                    "name": "transacoes",
+                    "description": "/transacoes",
+                    "operations": [
+                        {
+                            "id": 2147674,
+                            "destination": null,
+                            "interceptors": [
+                                {
+                                    "id": 162550,
+                                    "idTemp": null,
+                                    "position": 1,
+                                    "type": "Log",
+                                    "content": "{}",
+                                    "executionPoint": "FIRST",
+                                    "status": "REFERENCE",
+                                    "parent": null,
+                                    "revision": {
+                                        "id": 2147674,
+                                        "apiBroken": false,
+                                        "planBroken": false
+                                    },
+                                    "resource": null,
+                                    "operation": null,
+                                    "planId": null,
+                                    "customInterceptorId": null,
+                                    "parentType": "REVISION"
+                                },
+                                {
+                                    "id": 162553,
+                                    "idTemp": null,
+                                    "position": 2,
+                                    "type": "Log",
+                                    "content": "{}",
+                                    "executionPoint": "FIRST",
+                                    "status": "REFERENCE",
+                                    "parent": null,
+                                    "revision": {
+                                        "id": 2147674,
+                                        "apiBroken": false,
+                                        "planBroken": false
+                                    },
+                                    "resource": null,
+                                    "operation": null,
+                                    "planId": null,
+                                    "customInterceptorId": null,
+                                    "parentType": "REVISION"
+                                },
+                                {
+                                    "id": 162551,
+                                    "idTemp": null,
+                                    "position": 3,
+                                    "type": "Log",
+                                    "content": "{}",
+                                    "executionPoint": "FIRST",
+                                    "status": "REFERENCE",
+                                    "parent": null,
+                                    "revision": {
+                                        "id": 2147674,
+                                        "apiBroken": false,
+                                        "planBroken": false
+                                    },
+                                    "resource": null,
+                                    "operation": null,
+                                    "planId": null,
+                                    "customInterceptorId": null,
+                                    "parentType": "REVISION"
+                                },
+                                {
+                                    "id": 162549,
+                                    "idTemp": null,
+                                    "position": 4,
+                                    "type": "Log",
+                                    "content": "{}",
+                                    "executionPoint": "FIRST",
+                                    "status": "REFERENCE",
+                                    "parent": null,
+                                    "revision": {
+                                        "id": 2147674,
+                                        "apiBroken": false,
+                                        "planBroken": false
+                                    },
+                                    "resource": null,
+                                    "operation": null,
+                                    "planId": null,
+                                    "customInterceptorId": null,
+                                    "parentType": "REVISION"
+                                },
+                                {
+                                    "id": 162554,
+                                    "idTemp": null,
+                                    "position": 5,
+                                    "type": "Log",
+                                    "content": "{}",
+                                    "executionPoint": "FIRST",
+                                    "status": "REFERENCE",
+                                    "parent": null,
+                                    "revision": {
+                                        "id": 2147674,
+                                        "apiBroken": false,
+                                        "planBroken": false
+                                    },
+                                    "resource": null,
+                                    "operation": null,
+                                    "planId": null,
+                                    "customInterceptorId": null,
+                                    "parentType": "REVISION"
+                                }
+                            ],
+                            "apiBroken": false,
+                            "timeout": null,
+                            "description": "Teste de QA",
+                            "method": "POST",
+                            "path": "/trasacoes/path/grande/",
+                            "async": false,
+                            "urls": []
+                        },
+                        {
+                            "id": 2147675,
+                            "destination": "$destinationCI2",
+                            "interceptors": [
+                                {
+                                    "id": 162546,
+                                    "idTemp": null,
+                                    "position": 1,
+                                    "type": "Log",
+                                    "content": "{}",
+                                    "executionPoint": "FIRST",
+                                    "status": "REFERENCE",
+                                    "parent": null,
+                                    "revision": {
+                                        "id": 2147675,
+                                        "apiBroken": false,
+                                        "planBroken": false
+                                    },
+                                    "resource": null,
+                                    "operation": null,
+                                    "planId": null,
+                                    "customInterceptorId": null,
+                                    "parentType": "REVISION"
+                                },
+                                {
+                                    "id": 162558,
+                                    "idTemp": null,
+                                    "position": 2,
+                                    "type": "Client ID validation",
+                                    "content": "{\"location\":\"HEADER\",\"name\":\"client_id\"}",
+                                    "executionPoint": "FIRST",
+                                    "status": "REFERENCE",
+                                    "parent": null,
+                                    "revision": {
+                                        "id": 2147675,
+                                        "apiBroken": false,
+                                        "planBroken": false
+                                    },
+                                    "resource": null,
+                                    "operation": null,
+                                    "planId": null,
+                                    "customInterceptorId": null,
+                                    "parentType": "REVISION"
+                                },
+                                {
+                                    "id": 162556,
+                                    "idTemp": null,
+                                    "position": 3,
+                                    "type": "Client ID metric",
+                                    "content": "{\"location\":\"HEADER\",\"name\":\"client_id\"}",
+                                    "executionPoint": "FIRST",
+                                    "status": "REFERENCE",
+                                    "parent": null,
+                                    "revision": {
+                                        "id": 2147675,
+                                        "apiBroken": false,
+                                        "planBroken": false
+                                    },
+                                    "resource": null,
+                                    "operation": null,
+                                    "planId": null,
+                                    "customInterceptorId": null,
+                                    "parentType": "REVISION"
+                                },
+                                {
+                                    "id": 162547,
+                                    "idTemp": null,
+                                    "position": 4,
+                                    "type": "Cache read",
+                                    "content": "{\"cacheName\":\"transacoes\",\"cacheWrite\":{\"headers\":null,\"cacheName\":\"transacoes\",\"query\":null,\"id\":151562,\"type\":\"cacheWrite\",\"executionPoint\":\"SECOND\",\"numTTL\":\"10\"},\"id\":151557,\"type\":\"cacheRead\",\"executionPoint\":\"FIRST\"}",
+                                    "executionPoint": "FIRST",
+                                    "status": "REFERENCE",
+                                    "parent": null,
+                                    "revision": {
+                                        "id": 2147675,
+                                        "apiBroken": false,
+                                        "planBroken": false
+                                    },
+                                    "resource": null,
+                                    "operation": null,
+                                    "planId": null,
+                                    "customInterceptorId": null,
+                                    "parentType": "REVISION"
+                                },
+                                {
+                                    "id": 162557,
+                                    "idTemp": null,
+                                    "position": 5,
+                                    "type": "Log",
+                                    "content": "{}",
+                                    "executionPoint": "SECOND",
+                                    "status": "REFERENCE",
+                                    "parent": null,
+                                    "revision": {
+                                        "id": 2147675,
+                                        "apiBroken": false,
+                                        "planBroken": false
+                                    },
+                                    "resource": null,
+                                    "operation": null,
+                                    "planId": null,
+                                    "customInterceptorId": null,
+                                    "parentType": "REVISION"
+                                },
+                                {
+                                    "id": 162548,
+                                    "idTemp": null,
+                                    "position": 6,
+                                    "type": "Cache write",
+                                    "content": "{\"cacheName\":\"transacoes\",\"numTTL\":\"10\",\"headers\":null,\"query\":null}",
+                                    "executionPoint": "SECOND",
+                                    "status": "REFERENCE",
+                                    "parent": null,
+                                    "revision": {
+                                        "id": 2147675,
+                                        "apiBroken": false,
+                                        "planBroken": false
+                                    },
+                                    "resource": null,
+                                    "operation": null,
+                                    "planId": null,
+                                    "customInterceptorId": null,
+                                    "parentType": "REVISION"
+                                }
+                            ],
+                            "apiBroken": false,
+                            "timeout": null,
+                            "description": "Recupera todas as trasanções realizadas",
+                            "method": "GET",
+                            "path": "/transacoes",
+                            "async": false,
+                            "urls": []
+                        },
+                        {
+                            "id": 2147676,
+                            "destination": "$destinationCI1",
+                            "interceptors": [
+                                {
+                                    "id": 162552,
+                                    "idTemp": null,
+                                    "position": 1,
+                                    "type": "Log",
+                                    "content": "{}",
+                                    "executionPoint": "FIRST",
+                                    "status": "REFERENCE",
+                                    "parent": null,
+                                    "revision": {
+                                        "id": 2147676,
+                                        "apiBroken": false,
+                                        "planBroken": false
+                                    },
+                                    "resource": null,
+                                    "operation": null,
+                                    "planId": null,
+                                    "customInterceptorId": null,
+                                    "parentType": "REVISION"
+                                },
+                                {
+                                    "id": 162555,
+                                    "idTemp": null,
+                                    "position": 2,
+                                    "type": "Client ID validation",
+                                    "content": "{\"location\":\"HEADER\",\"name\":\"client_id\"}",
+                                    "executionPoint": "FIRST",
+                                    "status": "REFERENCE",
+                                    "parent": null,
+                                    "revision": {
+                                        "id": 2147676,
+                                        "apiBroken": false,
+                                        "planBroken": false
+                                    },
+                                    "resource": null,
+                                    "operation": null,
+                                    "planId": null,
+                                    "customInterceptorId": null,
+                                    "parentType": "REVISION"
+                                },
+                                {
+                                    "id": 162545,
+                                    "idTemp": null,
+                                    "position": 3,
+                                    "type": "Client ID metric",
+                                    "content": "{\"location\":\"HEADER\",\"name\":\"client_id\"}",
+                                    "executionPoint": "FIRST",
+                                    "status": "REFERENCE",
+                                    "parent": null,
+                                    "revision": {
+                                        "id": 2147676,
+                                        "apiBroken": false,
+                                        "planBroken": false
+                                    },
+                                    "resource": null,
+                                    "operation": null,
+                                    "planId": null,
+                                    "customInterceptorId": null,
+                                    "parentType": "REVISION"
+                                },
+                                {
+                                    "id": 162544,
+                                    "idTemp": null,
+                                    "position": 4,
+                                    "type": "Cache read",
+                                    "content": "{\"cacheName\":\"transacao\",\"cacheWrite\":{\"headers\":null,\"cacheName\":\"transacao\",\"query\":null,\"id\":151556,\"type\":\"cacheWrite\",\"executionPoint\":\"SECOND\",\"numTTL\":\"10\"},\"id\":151565,\"type\":\"cacheRead\",\"executionPoint\":\"FIRST\"}",
+                                    "executionPoint": "FIRST",
+                                    "status": "REFERENCE",
+                                    "parent": null,
+                                    "revision": {
+                                        "id": 2147676,
+                                        "apiBroken": false,
+                                        "planBroken": false
+                                    },
+                                    "resource": null,
+                                    "operation": null,
+                                    "planId": null,
+                                    "customInterceptorId": null,
+                                    "parentType": "REVISION"
+                                },
+                                {
+                                    "id": 162560,
+                                    "idTemp": null,
+                                    "position": 5,
+                                    "type": "Log",
+                                    "content": "{}",
+                                    "executionPoint": "SECOND",
+                                    "status": "REFERENCE",
+                                    "parent": null,
+                                    "revision": {
+                                        "id": 2147676,
+                                        "apiBroken": false,
+                                        "planBroken": false
+                                    },
+                                    "resource": null,
+                                    "operation": null,
+                                    "planId": null,
+                                    "customInterceptorId": null,
+                                    "parentType": "REVISION"
+                                },
+                                {
+                                    "id": 162559,
+                                    "idTemp": null,
+                                    "position": 6,
+                                    "type": "Cache write",
+                                    "content": "{\"cacheName\":\"transacao\",\"numTTL\":\"10\",\"headers\":null,\"query\":null}",
+                                    "executionPoint": "SECOND",
+                                    "status": "REFERENCE",
+                                    "parent": null,
+                                    "revision": {
+                                        "id": 2147676,
+                                        "apiBroken": false,
+                                        "planBroken": false
+                                    },
+                                    "resource": null,
+                                    "operation": null,
+                                    "planId": null,
+                                    "customInterceptorId": null,
+                                    "parentType": "REVISION"
+                                }
+                            ],
+                            "apiBroken": false,
+                            "timeout": null,
+                            "description": "Recupera uma transação específica",
+                            "method": "GET",
+                            "path": "/transacoes/{id}",
+                            "async": false,
+                            "urls": []
+                        }
+                    ],
+                    "config": {}
+                }
+            ]
         }
     ],
     "lastRevision": {
-        "id": 2147648,
+        "id": 2147672,
         "interceptors": [],
         "apiBroken": false,
-        "revisionNumber": 3,
+        "revisionNumber": 4,
         "lifeCycle": "AVAILABLE",
-        "creationDate": 1521656603000,
+        "creationDate": 1521818204000,
         "deployments": [
             {
-                "id": 25177,
-                "revisionId": 2147648,
-                "revisionNumber": 3,
-                "apiId": 204,
-                "apiName": "API Extrato",
-                "apiDescription": "Api com dados de transações realizadas",
-                "environmentId": 2,
-                "status": "UNDEPLOYED",
-                "deployDate": 1521657277000,
-                "deploymentSchedule": null
-            },
-            {
-                "id": 25178,
-                "revisionId": 2147648,
-                "revisionNumber": 3,
-                "apiId": 204,
-                "apiName": "API Extrato",
-                "apiDescription": "Api com dados de transações realizadas",
-                "environmentId": 1,
-                "status": "UNDEPLOYED",
-                "deployDate": 1521657279000,
-                "deploymentSchedule": null
-            },
-            {
-                "id": 25179,
-                "revisionId": 2147648,
-                "revisionNumber": 3,
-                "apiId": 204,
-                "apiName": "API Extrato",
-                "apiDescription": "Api com dados de transações realizadas",
-                "environmentId": 2,
-                "status": "UNDEPLOYED",
-                "deployDate": 1521657306000,
-                "deploymentSchedule": null
-            },
-            {
-                "id": 25215,
-                "revisionId": 2147648,
-                "revisionNumber": 3,
-                "apiId": 204,
-                "apiName": "API Extrato",
-                "apiDescription": "Api com dados de transações realizadas",
-                "environmentId": 2,
-                "status": "UNDEPLOYED",
-                "deployDate": 1521662640000,
-                "deploymentSchedule": null
-            },
-            {
-                "id": 25583,
-                "revisionId": 2147648,
-                "revisionNumber": 3,
-                "apiId": 204,
-                "apiName": "API Extrato",
-                "apiDescription": "Api com dados de transações realizadas",
-                "environmentId": 2,
-                "status": "UNDEPLOYED",
-                "deployDate": 1521808994000,
-                "deploymentSchedule": null
-            },
-            {
-                "id": 25588,
-                "revisionId": 2147648,
-                "revisionNumber": 3,
-                "apiId": 204,
-                "apiName": "API Extrato",
-                "apiDescription": "Api com dados de transações realizadas",
-                "environmentId": 2,
-                "status": "UNDEPLOYED",
-                "deployDate": 1521809358000,
-                "deploymentSchedule": null
-            },
-            {
-                "id": 25590,
-                "revisionId": 2147648,
-                "revisionNumber": 3,
-                "apiId": 204,
-                "apiName": "API Extrato",
-                "apiDescription": "Api com dados de transações realizadas",
-                "environmentId": 2,
-                "status": "UNDEPLOYED",
-                "deployDate": 1521809554000,
-                "deploymentSchedule": null
-            },
-            {
-                "id": 25634,
-                "revisionId": 2147648,
-                "revisionNumber": 3,
-                "apiId": 204,
-                "apiName": "API Extrato",
-                "apiDescription": "Api com dados de transações realizadas",
-                "environmentId": 3,
-                "status": "UNDEPLOYED",
-                "deployDate": 1521813563000,
-                "deploymentSchedule": null
-            },
-            {
-                "id": 25635,
-                "revisionId": 2147648,
-                "revisionNumber": 3,
-                "apiId": 204,
-                "apiName": "API Extrato",
-                "apiDescription": "Api com dados de transações realizadas",
-                "environmentId": 1,
-                "status": "UNDEPLOYED",
-                "deployDate": 1521813592000,
-                "deploymentSchedule": null
-            },
-            {
-                "id": 25646,
-                "revisionId": 2147648,
-                "revisionNumber": 3,
-                "apiId": 204,
-                "apiName": "API Extrato",
-                "apiDescription": "Api com dados de transações realizadas",
-                "environmentId": 3,
-                "status": "UNDEPLOYED",
-                "deployDate": 1521815113000,
-                "deploymentSchedule": null
-            },
-            {
-                "id": 25647,
-                "revisionId": 2147648,
-                "revisionNumber": 3,
-                "apiId": 204,
-                "apiName": "API Extrato",
-                "apiDescription": "Api com dados de transações realizadas",
-                "environmentId": 1,
-                "status": "UNDEPLOYED",
-                "deployDate": 1521815113000,
-                "deploymentSchedule": null
-            },
-            {
-                "id": 25648,
-                "revisionId": 2147648,
-                "revisionNumber": 3,
-                "apiId": 204,
-                "apiName": "API Extrato",
-                "apiDescription": "Api com dados de transações realizadas",
-                "environmentId": 2,
-                "status": "UNDEPLOYED",
-                "deployDate": 1521815113000,
-                "deploymentSchedule": null
-            },
-            {
-                "id": 25655,
-                "revisionId": 2147648,
-                "revisionNumber": 3,
-                "apiId": 204,
-                "apiName": "API Extrato",
-                "apiDescription": "Api com dados de transações realizadas",
-                "environmentId": 3,
-                "status": "UNDEPLOYED",
-                "deployDate": 1521815481000,
-                "deploymentSchedule": null
-            },
-            {
-                "id": 25656,
-                "revisionId": 2147648,
-                "revisionNumber": 3,
-                "apiId": 204,
-                "apiName": "API Extrato",
-                "apiDescription": "Api com dados de transações realizadas",
-                "environmentId": 2,
-                "status": "UNDEPLOYED",
-                "deployDate": 1521815482000,
-                "deploymentSchedule": null
-            },
-            {
-                "id": 25657,
-                "revisionId": 2147648,
-                "revisionNumber": 3,
-                "apiId": 204,
-                "apiName": "API Extrato",
-                "apiDescription": "Api com dados de transações realizadas",
-                "environmentId": 1,
-                "status": "UNDEPLOYED",
-                "deployDate": 1521815481000,
-                "deploymentSchedule": null
-            },
-            {
-                "id": 25659,
-                "revisionId": 2147648,
-                "revisionNumber": 3,
-                "apiId": 204,
-                "apiName": "API Extrato",
-                "apiDescription": "Api com dados de transações realizadas",
-                "environmentId": 1,
-                "status": "UNDEPLOYED",
-                "deployDate": 1521815757000,
-                "deploymentSchedule": null
-            },
-            {
-                "id": 25660,
-                "revisionId": 2147648,
-                "revisionNumber": 3,
-                "apiId": 204,
-                "apiName": "API Extrato",
-                "apiDescription": "Api com dados de transações realizadas",
-                "environmentId": 2,
-                "status": "UNDEPLOYED",
-                "deployDate": 1521815756000,
-                "deploymentSchedule": null
-            },
-            {
-                "id": 25661,
-                "revisionId": 2147648,
-                "revisionNumber": 3,
-                "apiId": 204,
-                "apiName": "API Extrato",
-                "apiDescription": "Api com dados de transações realizadas",
-                "environmentId": 3,
-                "status": "UNDEPLOYED",
-                "deployDate": 1521815756000,
-                "deploymentSchedule": null
-            },
-            {
-                "id": 25670,
-                "revisionId": 2147648,
-                "revisionNumber": 3,
-                "apiId": 204,
-                "apiName": "API Extrato",
-                "apiDescription": "Api com dados de transações realizadas",
-                "environmentId": 2,
-                "status": "UNDEPLOYED",
-                "deployDate": 1521816775000,
-                "deploymentSchedule": null
-            },
-            {
-                "id": 25671,
-                "revisionId": 2147648,
-                "revisionNumber": 3,
-                "apiId": 204,
-                "apiName": "API Extrato",
-                "apiDescription": "Api com dados de transações realizadas",
-                "environmentId": 3,
-                "status": "UNDEPLOYED",
-                "deployDate": 1521816775000,
-                "deploymentSchedule": null
-            },
-            {
-                "id": 25672,
-                "revisionId": 2147648,
-                "revisionNumber": 3,
-                "apiId": 204,
-                "apiName": "API Extrato",
-                "apiDescription": "Api com dados de transações realizadas",
-                "environmentId": 1,
-                "status": "UNDEPLOYED",
-                "deployDate": 1521816775000,
-                "deploymentSchedule": null
-            },
-            {
-                "id": 25673,
-                "revisionId": 2147648,
-                "revisionNumber": 3,
+                "id": 25690,
+                "revisionId": 2147672,
+                "revisionNumber": 4,
                 "apiId": 204,
                 "apiName": "API Extrato",
                 "apiDescription": "Api com dados de transações realizadas",
                 "environmentId": 2,
                 "status": "DEPLOYED",
-                "deployDate": 1521816862000,
-                "deploymentSchedule": null
-            },
-            {
-                "id": 25674,
-                "revisionId": 2147648,
-                "revisionNumber": 3,
-                "apiId": 204,
-                "apiName": "API Extrato",
-                "apiDescription": "Api com dados de transações realizadas",
-                "environmentId": 3,
-                "status": "DEPLOYED",
-                "deployDate": 1521816862000,
-                "deploymentSchedule": null
-            },
-            {
-                "id": 25675,
-                "revisionId": 2147648,
-                "revisionNumber": 3,
-                "apiId": 204,
-                "apiName": "API Extrato",
-                "apiDescription": "Api com dados de transações realizadas",
-                "environmentId": 1,
-                "status": "DEPLOYED",
-                "deployDate": 1521816862000,
+                "deployDate": 1521818207000,
                 "deploymentSchedule": null
             }
         ],
         "resources": [
             {
-                "id": 2147649,
+                "id": 2147673,
                 "destination": null,
                 "interceptors": [],
                 "apiBroken": false,
@@ -2351,11 +2538,11 @@
                 "description": "/transacoes",
                 "operations": [
                     {
-                        "id": 2147650,
-                        "destination": "$destinationCI1",
+                        "id": 2147674,
+                        "destination": null,
                         "interceptors": [
                             {
-                                "id": 161079,
+                                "id": 162550,
                                 "idTemp": null,
                                 "position": 1,
                                 "type": "Log",
@@ -2364,7 +2551,7 @@
                                 "status": "REFERENCE",
                                 "parent": null,
                                 "revision": {
-                                    "id": 2147650,
+                                    "id": 2147674,
                                     "apiBroken": false,
                                     "planBroken": false
                                 },
@@ -2375,16 +2562,16 @@
                                 "parentType": "REVISION"
                             },
                             {
-                                "id": 161070,
+                                "id": 162553,
                                 "idTemp": null,
                                 "position": 2,
-                                "type": "Client ID validation",
-                                "content": "{\"location\":\"HEADER\",\"name\":\"client_id\"}",
+                                "type": "Log",
+                                "content": "{}",
                                 "executionPoint": "FIRST",
                                 "status": "REFERENCE",
                                 "parent": null,
                                 "revision": {
-                                    "id": 2147650,
+                                    "id": 2147674,
                                     "apiBroken": false,
                                     "planBroken": false
                                 },
@@ -2395,16 +2582,16 @@
                                 "parentType": "REVISION"
                             },
                             {
-                                "id": 161072,
+                                "id": 162551,
                                 "idTemp": null,
                                 "position": 3,
-                                "type": "Client ID metric",
-                                "content": "{\"location\":\"HEADER\",\"name\":\"client_id\"}",
+                                "type": "Log",
+                                "content": "{}",
                                 "executionPoint": "FIRST",
                                 "status": "REFERENCE",
                                 "parent": null,
                                 "revision": {
-                                    "id": 2147650,
+                                    "id": 2147674,
                                     "apiBroken": false,
                                     "planBroken": false
                                 },
@@ -2415,16 +2602,16 @@
                                 "parentType": "REVISION"
                             },
                             {
-                                "id": 161080,
+                                "id": 162549,
                                 "idTemp": null,
                                 "position": 4,
-                                "type": "Cache read",
-                                "content": "{\"cacheName\":\"transacao\",\"cacheWrite\":{\"headers\":null,\"cacheName\":\"transacao\",\"query\":null,\"id\":151556,\"type\":\"cacheWrite\",\"executionPoint\":\"SECOND\",\"numTTL\":\"10\"},\"id\":151565,\"type\":\"cacheRead\",\"executionPoint\":\"FIRST\"}",
+                                "type": "Log",
+                                "content": "{}",
                                 "executionPoint": "FIRST",
                                 "status": "REFERENCE",
                                 "parent": null,
                                 "revision": {
-                                    "id": 2147650,
+                                    "id": 2147674,
                                     "apiBroken": false,
                                     "planBroken": false
                                 },
@@ -2435,36 +2622,16 @@
                                 "parentType": "REVISION"
                             },
                             {
-                                "id": 161077,
+                                "id": 162554,
                                 "idTemp": null,
                                 "position": 5,
                                 "type": "Log",
                                 "content": "{}",
-                                "executionPoint": "SECOND",
+                                "executionPoint": "FIRST",
                                 "status": "REFERENCE",
                                 "parent": null,
                                 "revision": {
-                                    "id": 2147650,
-                                    "apiBroken": false,
-                                    "planBroken": false
-                                },
-                                "resource": null,
-                                "operation": null,
-                                "planId": null,
-                                "customInterceptorId": null,
-                                "parentType": "REVISION"
-                            },
-                            {
-                                "id": 161071,
-                                "idTemp": null,
-                                "position": 6,
-                                "type": "Cache write",
-                                "content": "{\"cacheName\":\"transacao\",\"numTTL\":\"10\",\"headers\":null,\"query\":null}",
-                                "executionPoint": "SECOND",
-                                "status": "REFERENCE",
-                                "parent": null,
-                                "revision": {
-                                    "id": 2147650,
+                                    "id": 2147674,
                                     "apiBroken": false,
                                     "planBroken": false
                                 },
@@ -2477,18 +2644,18 @@
                         ],
                         "apiBroken": false,
                         "timeout": null,
-                        "description": "Recupera uma transação específica",
-                        "method": "GET",
-                        "path": "/transacoes/{id}",
+                        "description": "Teste de QA",
+                        "method": "POST",
+                        "path": "/trasacoes/path/grande/",
                         "async": false,
                         "urls": []
                     },
                     {
-                        "id": 2147651,
+                        "id": 2147675,
                         "destination": "$destinationCI2",
                         "interceptors": [
                             {
-                                "id": 161074,
+                                "id": 162546,
                                 "idTemp": null,
                                 "position": 1,
                                 "type": "Log",
@@ -2497,7 +2664,7 @@
                                 "status": "REFERENCE",
                                 "parent": null,
                                 "revision": {
-                                    "id": 2147651,
+                                    "id": 2147675,
                                     "apiBroken": false,
                                     "planBroken": false
                                 },
@@ -2508,7 +2675,7 @@
                                 "parentType": "REVISION"
                             },
                             {
-                                "id": 161085,
+                                "id": 162558,
                                 "idTemp": null,
                                 "position": 2,
                                 "type": "Client ID validation",
@@ -2517,7 +2684,7 @@
                                 "status": "REFERENCE",
                                 "parent": null,
                                 "revision": {
-                                    "id": 2147651,
+                                    "id": 2147675,
                                     "apiBroken": false,
                                     "planBroken": false
                                 },
@@ -2528,7 +2695,7 @@
                                 "parentType": "REVISION"
                             },
                             {
-                                "id": 161076,
+                                "id": 162556,
                                 "idTemp": null,
                                 "position": 3,
                                 "type": "Client ID metric",
@@ -2537,7 +2704,7 @@
                                 "status": "REFERENCE",
                                 "parent": null,
                                 "revision": {
-                                    "id": 2147651,
+                                    "id": 2147675,
                                     "apiBroken": false,
                                     "planBroken": false
                                 },
@@ -2548,7 +2715,7 @@
                                 "parentType": "REVISION"
                             },
                             {
-                                "id": 161084,
+                                "id": 162547,
                                 "idTemp": null,
                                 "position": 4,
                                 "type": "Cache read",
@@ -2557,7 +2724,7 @@
                                 "status": "REFERENCE",
                                 "parent": null,
                                 "revision": {
-                                    "id": 2147651,
+                                    "id": 2147675,
                                     "apiBroken": false,
                                     "planBroken": false
                                 },
@@ -2568,7 +2735,7 @@
                                 "parentType": "REVISION"
                             },
                             {
-                                "id": 161086,
+                                "id": 162557,
                                 "idTemp": null,
                                 "position": 5,
                                 "type": "Log",
@@ -2577,7 +2744,7 @@
                                 "status": "REFERENCE",
                                 "parent": null,
                                 "revision": {
-                                    "id": 2147651,
+                                    "id": 2147675,
                                     "apiBroken": false,
                                     "planBroken": false
                                 },
@@ -2588,7 +2755,7 @@
                                 "parentType": "REVISION"
                             },
                             {
-                                "id": 161073,
+                                "id": 162548,
                                 "idTemp": null,
                                 "position": 6,
                                 "type": "Cache write",
@@ -2597,7 +2764,7 @@
                                 "status": "REFERENCE",
                                 "parent": null,
                                 "revision": {
-                                    "id": 2147651,
+                                    "id": 2147675,
                                     "apiBroken": false,
                                     "planBroken": false
                                 },
@@ -2617,11 +2784,11 @@
                         "urls": []
                     },
                     {
-                        "id": 2147669,
-                        "destination": null,
+                        "id": 2147676,
+                        "destination": "$destinationCI1",
                         "interceptors": [
                             {
-                                "id": 162494,
+                                "id": 162552,
                                 "idTemp": null,
                                 "position": 1,
                                 "type": "Log",
@@ -2630,7 +2797,7 @@
                                 "status": "REFERENCE",
                                 "parent": null,
                                 "revision": {
-                                    "id": 2147669,
+                                    "id": 2147676,
                                     "apiBroken": false,
                                     "planBroken": false
                                 },
@@ -2641,16 +2808,16 @@
                                 "parentType": "REVISION"
                             },
                             {
-                                "id": 162500,
+                                "id": 162555,
                                 "idTemp": null,
                                 "position": 2,
-                                "type": "Log",
-                                "content": "{}",
+                                "type": "Client ID validation",
+                                "content": "{\"location\":\"HEADER\",\"name\":\"client_id\"}",
                                 "executionPoint": "FIRST",
                                 "status": "REFERENCE",
                                 "parent": null,
                                 "revision": {
-                                    "id": 2147669,
+                                    "id": 2147676,
                                     "apiBroken": false,
                                     "planBroken": false
                                 },
@@ -2661,16 +2828,16 @@
                                 "parentType": "REVISION"
                             },
                             {
-                                "id": 162499,
+                                "id": 162545,
                                 "idTemp": null,
                                 "position": 3,
-                                "type": "Log",
-                                "content": "{}",
+                                "type": "Client ID metric",
+                                "content": "{\"location\":\"HEADER\",\"name\":\"client_id\"}",
                                 "executionPoint": "FIRST",
                                 "status": "REFERENCE",
                                 "parent": null,
                                 "revision": {
-                                    "id": 2147669,
+                                    "id": 2147676,
                                     "apiBroken": false,
                                     "planBroken": false
                                 },
@@ -2681,16 +2848,16 @@
                                 "parentType": "REVISION"
                             },
                             {
-                                "id": 162495,
+                                "id": 162544,
                                 "idTemp": null,
                                 "position": 4,
-                                "type": "Log",
-                                "content": "{}",
+                                "type": "Cache read",
+                                "content": "{\"cacheName\":\"transacao\",\"cacheWrite\":{\"headers\":null,\"cacheName\":\"transacao\",\"query\":null,\"id\":151556,\"type\":\"cacheWrite\",\"executionPoint\":\"SECOND\",\"numTTL\":\"10\"},\"id\":151565,\"type\":\"cacheRead\",\"executionPoint\":\"FIRST\"}",
                                 "executionPoint": "FIRST",
                                 "status": "REFERENCE",
                                 "parent": null,
                                 "revision": {
-                                    "id": 2147669,
+                                    "id": 2147676,
                                     "apiBroken": false,
                                     "planBroken": false
                                 },
@@ -2701,16 +2868,16 @@
                                 "parentType": "REVISION"
                             },
                             {
-                                "id": 162497,
+                                "id": 162560,
                                 "idTemp": null,
                                 "position": 5,
                                 "type": "Log",
                                 "content": "{}",
-                                "executionPoint": "FIRST",
+                                "executionPoint": "SECOND",
                                 "status": "REFERENCE",
                                 "parent": null,
                                 "revision": {
-                                    "id": 2147669,
+                                    "id": 2147676,
                                     "apiBroken": false,
                                     "planBroken": false
                                 },
@@ -2721,16 +2888,16 @@
                                 "parentType": "REVISION"
                             },
                             {
-                                "id": 162498,
+                                "id": 162559,
                                 "idTemp": null,
                                 "position": 6,
-                                "type": "Log",
-                                "content": "{}",
-                                "executionPoint": "FIRST",
+                                "type": "Cache write",
+                                "content": "{\"cacheName\":\"transacao\",\"numTTL\":\"10\",\"headers\":null,\"query\":null}",
+                                "executionPoint": "SECOND",
                                 "status": "REFERENCE",
                                 "parent": null,
                                 "revision": {
-                                    "id": 2147669,
+                                    "id": 2147676,
                                     "apiBroken": false,
                                     "planBroken": false
                                 },
@@ -2743,9 +2910,9 @@
                         ],
                         "apiBroken": false,
                         "timeout": null,
-                        "description": "Teste de QA",
-                        "method": "POST",
-                        "path": "/trasacoes/path/grande/",
+                        "description": "Recupera uma transação específica",
+                        "method": "GET",
+                        "path": "/transacoes/{id}",
                         "async": false,
                         "urls": []
                     }
