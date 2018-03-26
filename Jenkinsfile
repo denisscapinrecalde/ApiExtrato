@@ -1,8 +1,8 @@
 node {
     stage ("Checkout"){
-        def scmVars = checkout scm
+        checkout scm
         sensediaApiJson "204"
-        scmVars.GIT_COMMIT
+        bat "git push"
     }
     stage ("Quality Analyst"){
         sensediaApiQA(destination: true, logInterceptor: true, resourceOutOfSize: true)
