@@ -4,7 +4,7 @@ node {
         sensediaApiJson "204"
         bat "git.exe add *"
         bat "git.exe commit --no-edit -m 'Jenkins'"
-        bat "git.exe push origin master"
+        bat "git.exe push origin HEAD:master"
     }
     stage ("Quality Analyst"){
         sensediaApiQA(destination: true, logInterceptor: true, resourceOutOfSize: true)
