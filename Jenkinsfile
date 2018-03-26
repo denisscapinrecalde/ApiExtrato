@@ -2,7 +2,7 @@ node {
     stage ("Checkout"){
         checkout scm
         sensediaApiJson "204"
-        bat "git push"
+        bat "git commit -am 'Updated version number'"
     }
     stage ("Quality Analyst"){
         sensediaApiQA(destination: true, logInterceptor: true, resourceOutOfSize: true)
