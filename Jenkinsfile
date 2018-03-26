@@ -2,9 +2,9 @@ node {
     stage ("Checkout"){
         checkout scm
         sensediaApiJson "204"
-        bat "git add *"
-        bat "git commit -am 'Automated Jenkins commit'"
-        bat "git push origin master"
+        bat "git.exe add *"
+        bat "git.exe commit --no-edit"
+        bat "git.exe push origin master"
     }
     stage ("Quality Analyst"){
         sensediaApiQA(destination: true, logInterceptor: true, resourceOutOfSize: true)
