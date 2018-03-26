@@ -2,10 +2,8 @@ node {
     stage ("Checkout"){
         checkout scm
         sensediaApiJson "204"
-        git url: "https://github.com/denisscapinrecalde/ApiExtrato.git",
-            credentialsId: 'git',
-            branch: "master"
-        bat "git commit -am 'Updated version number'"
+        bat "git add *"
+        bat "git commit"
         bat "git push origin master"
     }
     stage ("Quality Analyst"){
