@@ -1,7 +1,7 @@
 node {
     stage ("Checkout"){
         checkout scm
-        sensediaApiJson(apidId: "204")
+        sensediaApiJson "204"
     }
     stage ("Quality Analyst"){
         sensediaApiQA(destination: true, logInterceptor: true, resourceOutOfSize: true)
