@@ -3,7 +3,7 @@ node {
         checkout scm
         sensediaApiJson "204"
         bat "git.exe add *"
-        bat "git.exe commit --no-edit"
+        bat "git.exe commit --no-edit -m 'Automated deploy'"
         bat "git.exe push origin master"
     }
     stage ("Quality Analyst"){
