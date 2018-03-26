@@ -3,7 +3,7 @@ node {
         checkout scm
         sensediaApiJson "204"
         bat "git.exe add *"
-        bat "git.exe commit --no-edit -m 'Jenkins'"
+        bat 'git.exe commit --no-edit -m "Automated Jenkins deploy"'
         bat "git.exe push origin HEAD:master"
     }
     stage ("Quality Analyst"){
